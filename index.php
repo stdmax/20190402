@@ -325,13 +325,13 @@ $discounts = [
 $orderedProducts = [
 	'A' => 7,
 	'B' => 2,
-/*	'C' => 1,
+	'C' => 1,
 	'D' => 1,
 	'E' => 1,
 	'J' => 1,
 	'K' => 4,
 	'L' => 1,
-	'M' => 1,*/
+	'M' => 1,
 ];
 
 $discountCalculator = new DiscountCalculator($productPrices, $discounts);
