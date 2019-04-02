@@ -325,40 +325,16 @@ $discounts = [
 $orderedProducts = [
 	'A' => 7,
 	'B' => 2,
-	'C' => 1,
+/*	'C' => 1,
 	'D' => 1,
 	'E' => 1,
 	'J' => 1,
 	'K' => 4,
 	'L' => 1,
-	'M' => 1,
+	'M' => 1,*/
 ];
 
 $discountCalculator = new DiscountCalculator($productPrices, $discounts);
 $orderTotal = $discountCalculator->calculateOrderTotal($orderedProducts);
 
-echo sprintf('Сумма заказа: %.2f', $orderTotal) . "\n\n";
-
-$productPrices = [
-	'A' => 100,
-	'B' => 10,
-	'C' => 50,
-	'D' => 10,
-	'E' => 30,
-	'F' => 20,
-	'G' => 10,
-	'H' => 350,
-	'I' => 950,
-	'J' => 45,
-	'K' => 15,
-	'L' => 5,
-	'M' => 40,
-];
-$orderedProducts = [
-	'J' => 1,
-	'K' => 1,
-	'L' => 1,
-	'M' => 2,
-];
-$orderTotal = $discountCalculator->calculateOrderTotal($orderedProducts);
 echo sprintf('Сумма заказа: %.2f', $orderTotal) . "\n\n";
